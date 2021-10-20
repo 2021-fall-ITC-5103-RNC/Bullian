@@ -46,6 +46,60 @@
 .catoegory-icon{
     width: 100%;
 }
+
+
+.footer {
+    display: flex;
+    align-content: space-between;
+    background-color: lightgrey;
+}
+
+.about_desc {
+    text-align: left;
+    font-size: 13px;
+    width: 300px;
+    line-height: 15px;
+}
+
+.left {
+    text-align: left;
+    float: left;
+    padding-left: 15px;
+    width: 25%;
+    line-height: 24px;
+}
+
+.right {
+    float: right;
+    text-align: left;
+    padding-right: 15px;
+    width: 25%;
+    line-height: 24px;
+}
+
+.social_media {
+    padding: 5px;
+    width: 35px;
+    padding-left: 4px;
+}
+
+.centered {
+    text-align: left;
+    width: 25%;
+    line-height: 24px;
+}
+
+.footer_heading {
+    font-weight: bold;
+    text-align: left;
+    margin: 7px 0px;
+}
+
+.footer_content {
+    margin: 4px;
+    font-size: 15px;
+}
+
 @media screen and (max-width: 767px){
     .test-card{
         width: 100%;
