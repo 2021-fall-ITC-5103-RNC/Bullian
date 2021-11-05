@@ -1,0 +1,17 @@
+.black-text {
+    color: black
+}
+
+ul {
+    font-size: 15px;
+    list-style-type: none;
+}
+
+li p {
+    margin: 0px;
+    line-height: 23px;
+}
+
+.faq {
+    background-color: #eaf1fc;
+}
