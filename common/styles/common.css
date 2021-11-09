@@ -1,23 +1,37 @@
-body{
+body {
     margin: 0;
     font-size: 18px;
 }
-.display-flex{
+
+.display-flex {
     display: flex;
 }
-.hor-flex-center{
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+.hor-flex-center {
     justify-content: center;
 }
-.vert-flex-center{
+
+.vert-flex-center {
     align-items: center;
 }
-.space-apart{
+
+.space-apart {
     justify-content: space-between;
 }
-.flex-dir-col{
+
+.flex-dir-col {
     flex-direction: column;
 }
-.main-button{
+
+.flex-dir-row {
+    flex-direction: row;
+}
+
+.main-button {
     text-align: center;
     vertical-align: middle;
     border: 1px solid transparent;
@@ -28,78 +42,96 @@ body{
     cursor: pointer;
     font-size: 16px;
 }
-.button-blue{
+
+.button-blue {
     color: #fff;
     background-color: #006bff;
     padding: 1% 2%;
 }
-.button-palm{
+
+.button-palm {
     color: #fff;
     background-color: #1c2331;
     padding: 1% 2%;
 }
-.anchor-style{
+
+.anchor-style {
     text-decoration: none;
 }
-.blue-text{
+
+.blue-text {
     color: #006bff;
 }
-.width-20{
+
+.width-20 {
     width: 20%;
 }
-.width-25{
+
+.width-25 {
     width: 25%;
 }
-.width-40{
+
+.width-40 {
     width: 40%;
 }
-.width-50{
+
+.width-50 {
     width: 50%;
 }
-.width-60{
+
+.width-60 {
     width: 60%;
 }
-.width-75{
+
+.width-75 {
     width: 75%;
 }
-.width-100{
+
+.width-100 {
     width: 100%;
 }
-.mbtm-8{
+
+.mbtm-8 {
     margin-bottom: 8%;
 }
+
 .mbtm-3 {
     margin-bottom: 3%;
 }
-.margin-0{
+
+.margin-0 {
     margin: 0;
 }
-.mob-display{
+
+.mob-display {
     display: none;
 }
-.main-body{
+
+.main-body {
     margin: 3% 0%;
 }
-.align-center{
+
+.align-center {
     text-align: center;
 }
-@media screen and (max-width: 767px){
-    .mob-flex-dir-col{
+
+@media screen and (max-width: 767px) {
+    .mob-flex-dir-col {
         flex-direction: column;
     }
-    .mob-hor-flex-center{
+    .mob-hor-flex-center {
         justify-content: center;
     }
-    .mob-width-100{
+    .mob-width-100 {
         width: 100%;
     }
-    .mob-display{
+    .mob-display {
         display: block;
     }
-    .mob-display-none{
+    .mob-display-none {
         display: none;
     }
-    .mob-sec-pad{
+    .mob-sec-pad {
         padding: 2%;
     }
 }
