@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/authentication.css"/>
+    <link rel="stylesheet" href="../common/styles/common.css"/>
+    <title>Bullian - coaching made easy</title>
+    <script>
+        function showLogin(){
+            document.getElementById('log-in').classList.remove('hide-section');
+            document.getElementById('sign-up').classList.add('hide-section');
+        }
+        function showSignUp(){
+            document.getElementById('log-in').classList.add('hide-section');
+            document.getElementById('sign-up').classList.remove('hide-section');
+        }
+    </script>
+</head>
+<body>
+    <!-- Header goes here -->
+    <main class="main-body">
+        <section class="main-container display-flex vert-flex-center space-apart mob-flex-dir-col-rev  mbtm-8 sign-in-container" id="log-in">
+            <div class="width-50 mob-width-100 pad-3 right-border">
+                <h1>Need an account?</h1>
+                <p class="mbtm-8">Bullian is a hybrid online learning platform where students can choose to learn with an instructor of their choice face to face or they can choose from a plethora of do-at-your-pace courses</p>
+                <button class="main-button button-blue anchor-style pad-2" onclick=showSignUp()>Sign up</button>
+            </div>
+            <div class="width-50 mob-width-100 pad-3 mob-border-bot">
+                <h1>Account log in</h1>
+                <form method="POST" action="">
+                    <div>
+                        <label for="username" class="input-form-label mbtm-3">Username</label>
+                        <br/>
+                        <input type="text" name="username" class="input-form-field width-100 mbtm-5" required/>
+                    </div>
+                    <div>
+                        <label for="password" class="input-form-label mbtm-3">Password</label>
+                        <br/>
+                        <input type="password" name="password" class="input-form-field width-100 mbtm-8" required/>
+                    </div>
+                    <div>
+                        <button type="submit" class="main-button button-palm pad-2">Log in</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="main-container display-flex vert-flex-center space-apart mob-flex-dir-col mbtm-8 sign-in-container hide-section" id="sign-up">
+            <div class="width-50 mob-width-100 pad-3 mob-border-bot">
+                <h1>Create an account</h1>
+                <form method="POST" action="">
+                    <div>
+                        <label for="email" class="input-form-label mbtm-3">Email</label>
+                        <br/>
+                        <input type="email" name="email" class="input-form-field width-100 mbtm-5" required/>
+                    </div>
+                    <div>
+                        <label for="password" class="input-form-label mbtm-3">Password</label>
+                        <br/>
+                        <input type="password" name="password" class="input-form-field width-100 mbtm-8" required/>
+                    </div>
+                    <div>
+                        <label for="confirm-password" class="input-form-label mbtm-3">Confirm Password</label>
+                        <br/>
+                        <input type="password" name="confirm-password" class="input-form-field width-100 mbtm-8" required/>
+                    </div>
+                    <div>
+                        <button type="submit" class="main-button button-palm pad-2">Sign up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="width-50 mob-width-100 pad-3 left-border">
+                <h1>Already have an account?</h1>
+                <p class="mbtm-8">Bullian is a hybrid online learning platform where students can choose to learn with an instructor of their choice face to face or they can choose from a plethora of do-at-your-pace courses</p>
+                <button class="main-button button-blue anchor-style pad-2" onclick=showLogin()>Log in</button>
+            </div>
+        </section>
+    </main>
+    <!-- Footer goes here -->
+</body>
+</html> 

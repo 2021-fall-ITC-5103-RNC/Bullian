@@ -1,24 +1,9 @@
-.main-container{
-    max-width:1140px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: sans-serif;
-    
-}
-.input-form-field{
-    padding: .375rem .75rem;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #cfcfcf;
-    border: none;
-    font-size: 18px;
-    margin-right: 2%;
-    outline: none;
-}
+
 .input-form-field:focus{
     border: none;
 }
 .info-section{
-    background-color: #f7f7f7;
+    background-color: #edeaea !important;
     padding: 5% 0%;
 }
 .test-section{
@@ -31,10 +16,10 @@
     border-radius: 50px;
 }
 .test-card{
-    background-color: #dbdbdb;
+    background-color: #edeaea !important;
     border-radius: 5%;
     padding: 2%;
-    box-shadow: 0px 0px 5px #898888;
+    box-shadow: 0px 0px 10px #cfcfcf;
     width: 18%;
 }
 .button-container{
