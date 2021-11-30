@@ -1,0 +1,41 @@
+.black-text {
+    color: black
+}
+
+ul {
+    font-size: 15px;
+    list-style-type: none;
+}
+
+li p {
+    margin: 0px;
+    line-height: 23px;
+}
+
+.faq {
+    background-color: #eaf1fc;
+}
+
+#faq_header {
+    background-color: #e3e3e3;
+    height: 200px;
+    display: block;
+}
+
+#faq_img {
+    float: right;
+}
+
+#faq_header h1 {
+    padding-top: 3%;
+    padding-left: 8%;
+    margin: 0%
+}
+
+#faq_header h4 {
+    padding-left: 8%;
+}
+
+.grey_text {
+    color: #a2a4a6;
+}

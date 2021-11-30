@@ -1,0 +1,49 @@
+.products-card {
+    width: 40%;
+}
+
+.course_img {
+    height: 200px;
+    float: left;
+}
+
+header {
+    display: block;
+    background-color: #041a2e;
+    height: 200px;
+}
+
+#course_header {
+    width: 36%;
+    padding-top: 50px;
+}
+
+#course_header h1 {
+    color: #e3ae37;
+    text-shadow: -1px -1px 3px;
+}
+
+main {
+    width: 80%;
+    display: block;
+    margin: 5%;
+}
+
+.products-body {
+    margin: 3% 8%;
+}
+
+.course_img_left {
+    height: 200px;
+    float: left;
+}
+
+.content-font {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    color: #877640;
+}
+
+.sub_heading_text {
+    color: #c3884c
+}
