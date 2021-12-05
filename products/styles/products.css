@@ -7,7 +7,7 @@
     float: left;
 }
 
-header {
+#course_head {
     display: block;
     background-color: #041a2e;
     height: 200px;
