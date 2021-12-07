@@ -1,3 +1,14 @@
 .video-frame{
-    height: 40rem;
+    height: 40em;
+}
+.right-border{
+    border-right: 1px solid lightgrey;
+}
+@media screen and (max-width: 767px) {
+    .video-frame{
+        height: 15em;
+    }
+    .right-border{
+        border-right: none;
+    }
 }
