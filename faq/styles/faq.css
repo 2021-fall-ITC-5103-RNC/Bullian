@@ -27,7 +27,7 @@ p.faq:after {
     content: '\2795';
     font-size: 13px;
     color: #777;
-    float: left;
+    float: right;
     margin-right: 5px;
 }
 
@@ -69,4 +69,10 @@ p.ans {
 
 .grey_text {
     color: #a2a4a6;
+}
+
+@media screen and (max-width: 767px) {
+    ul {
+        padding: 10px;
+    }
 }
