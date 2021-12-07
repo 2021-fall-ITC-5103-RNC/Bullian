@@ -1,35 +1,35 @@
-var faq = document.getElementsByClassName("faq");
-var i;
 
-for (var i = 0; i < faq.length; i++) {
-    faq[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-    });
-}
+window.onload(() => {
+    var faq = document.getElementsByClassName("faq");
+    var i;
 
-const searchForm = document.getElementById('form');
-const searchInput = document.getElementById('searchbar');
-let questions = document.getElementsByClassName('faq');
-searchForm.addEventListener('
-', (event) => {
-const { value } = searchInput;
+    for (var i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        });
+    }
+})
 
-// get user search input converted to lowercase
-const searchQuery = value.toLowerCase();
 
-for (const element of questions) {
-    let qn = element.textContent.toLowerCase();
 
-    if (qn.includes(searchQuery)) {
-        element.style.display = "block";
-    } else {
-        element.style.display = "none";
+
+const searchFaq = (e) => {
+    e.preventDefault();
+    const searchInput = document.getElementById('searchbar').value;
+    let questions = document.getElementsByClassName('faq');
+    console.log(questions)
+    // get user search input converted to lowercase
+    const searchQuery = searchInput.toLowerCase();
+
+    for (const element of questions) {
+        console.log(element.innerText)
+        let qn = element.innerText.toLowerCase();
+
+        if (qn.includes(searchQuery)) {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
     }
 }
-});
-
-const clearButton = document.getElementById('clear');
-clearButton.addEventListener("click", () => {
-    document.getElementById('searchbar').value = "";
-});
