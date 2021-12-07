@@ -6,16 +6,7 @@
     <link rel="stylesheet" href="styles/authentication.css"/>
     <link rel="stylesheet" href="../common/styles/common.css"/>
     <title>Bullian - coaching made easy</title>
-    <script>
-        function showLogin(){
-            document.getElementById('log-in').classList.remove('hide-section');
-            document.getElementById('sign-up').classList.add('hide-section');
-        }
-        function showSignUp(){
-            document.getElementById('log-in').classList.add('hide-section');
-            document.getElementById('sign-up').classList.remove('hide-section');
-        }
-    </script>
+    <script src="./js/authentication.js"></script>
 </head>
 <body>
     <!-- Header/Nav starts here -->
@@ -37,7 +28,8 @@
     </header>   
     <!-- Header/Nav ends here -->
     <main class="main-body">
-        <section class="main-container display-flex vert-flex-center space-apart mob-flex-dir-col-rev  mbtm-8 mtop-8 sign-in-container" id="log-in">
+        <section class="main-container width-100 mtop-8" id="login-status"></section>
+        <section class="main-container display-flex vert-flex-center space-apart mob-flex-dir-col-rev  mbtm-8 sign-in-container" id="log-in">
             <div class="width-50 mob-width-100 pad-3 right-border">
                 <h1>Need an account?</h1>
                 <p class="mbtm-8">Bullian is a hybrid online learning platform where students can choose to learn with an instructor of their choice face to face or they can choose from a plethora of do-at-your-pace courses</p>
@@ -49,40 +41,40 @@
                     <div>
                         <label for="username" class="input-form-label mbtm-3">Username</label>
                         <br/>
-                        <input type="text" name="username" class="input-form-field width-100 mbtm-5" required/>
+                        <input type="text" name="username" class="input-form-field width-100 mbtm-5" id="signin-user" required/>
                     </div>
                     <div>
                         <label for="password" class="input-form-label mbtm-3">Password</label>
                         <br/>
-                        <input type="password" name="password" class="input-form-field width-100 mbtm-8" required/>
+                        <input type="password" name="password" class="input-form-field width-100 mbtm-8" id="signin-passwd" required/>
                     </div>
                     <div>
-                        <button type="submit" class="main-button button-palm pad-2">Log in</button>
+                        <button type="submit" class="main-button button-palm pad-2" onclick=signIn(event)>Log in</button>
                     </div>
                 </form>
             </div>
         </section>
-        <section class="main-container display-flex vert-flex-center space-apart mob-flex-dir-col mbtm-8 mtop-8 sign-in-container hide-section" id="sign-up">
+        <section class="main-container display-flex vert-flex-center space-apart mob-flex-dir-col mbtm-8 sign-in-container hide-section" id="sign-up">
             <div class="width-50 mob-width-100 pad-3 mob-border-bot">
                 <h1>Create an account</h1>
                 <form method="POST" action="">
                     <div>
                         <label for="email" class="input-form-label mbtm-3">Email</label>
                         <br/>
-                        <input type="email" name="email" class="input-form-field width-100 mbtm-5" required/>
+                        <input type="email" name="email" class="input-form-field width-100 mbtm-5" id="signup-user" required/>
                     </div>
                     <div>
                         <label for="password" class="input-form-label mbtm-3">Password</label>
                         <br/>
-                        <input type="password" name="password" class="input-form-field width-100 mbtm-8" required/>
+                        <input type="password" name="password" class="input-form-field width-100 mbtm-8" id="signup-passwd" required/>
                     </div>
                     <div>
                         <label for="confirm-password" class="input-form-label mbtm-3">Confirm Password</label>
                         <br/>
-                        <input type="password" name="confirm-password" class="input-form-field width-100 mbtm-8" required/>
+                        <input type="password" name="confirm-password" class="input-form-field width-100 mbtm-8" id="signup-conf-passwd" required/>
                     </div>
                     <div>
-                        <button type="submit" class="main-button button-palm pad-2">Sign up</button>
+                        <button type="submit" class="main-button button-palm pad-2" onclick=signUp(event)>Sign up</button>
                     </div>
                 </form>
             </div>
