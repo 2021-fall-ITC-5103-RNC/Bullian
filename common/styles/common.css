@@ -320,4 +320,12 @@ body {
     .mob-align-center{
         text-align: center;
     }
+    .main-nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-nav + a{
+        width: 100%;
+        margin-bottom: 4%;
+    }
 }
