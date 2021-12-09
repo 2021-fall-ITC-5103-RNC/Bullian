@@ -1,5 +1,4 @@
-
-window.onload(() => {
+window.onload = () => {
     var faq = document.getElementsByClassName("faq");
     var i;
 
@@ -9,17 +8,14 @@ window.onload(() => {
             this.nextElementSibling.classList.toggle("show");
         });
     }
-})
-
-
-
+}
 
 const searchFaq = (e) => {
     e.preventDefault();
     const searchInput = document.getElementById('searchbar').value;
     let questions = document.getElementsByClassName('faq');
     console.log(questions)
-    // get user search input converted to lowercase
+        // get user search input converted to lowercase
     const searchQuery = searchInput.toLowerCase();
 
     for (const element of questions) {
