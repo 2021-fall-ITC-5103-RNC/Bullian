@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/learning.css"/>
     <link rel="stylesheet" href="../common/styles/common.css"/>
     <title>Bullian - coaching made easy</title>
+    <script src="./script/learning.js"></script>
 </head>
 <body>
     <!-- Header/Nav starts here -->
@@ -36,7 +37,7 @@
             <div class="width-20 mob-width-100 pad-3 mob-border-bot">
                 <h3>Live comments:</h3>
                 <hr/>
-                <ul class="list-style-none pad-none">
+                <ul class="list-style-none pad-none " id="comment-list">
                     <li class="mbtm-3">
                         <b>Swapnil: </b>
                         <small>Good Morning</small>
@@ -66,6 +67,12 @@
                         <small>I am doing good. Thanks for asking.</small>
                     </li>
                 </ul>
+                <hr/>
+                <form name="comment-form">
+                    <input type="text" class="width-100 mbtm-3" placeholder="Enter your name" id="name" required/>
+                    <textarea class="width=100 mbtm-3" cols="48" rows="4" placeholder="Add your comment" id="comment" required></textarea>
+                    <button type="submit" class="main-button button-blue width-100" onclick=addComment(event)>Add comment</button>
+                </form>
             </div>
         </section>
         <section class="main-container-fluid pad-3 mob-sec-pad">
