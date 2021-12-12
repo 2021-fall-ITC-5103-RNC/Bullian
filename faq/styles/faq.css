@@ -108,4 +108,35 @@ button {
     ul {
         padding: 10px;
     }
+    button {
+        margin-right: 2%;
+    }
+    .input {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #form {
+        margin-left: 8%;
+    }
+    #faq_header h4 {
+        padding-left: 8%;
+        font-size: 8px;
+    }
+    #faq_img {
+        float: right;
+        height: 100px;
+        width: 208px;
+    }
+    #faq_header h1 {
+        padding-top: 7%;
+        padding-left: 8%;
+        margin: 0%;
+        font-size: 17px;
+        line-height: 16px;
+    }
+    #faq_header {
+        background-color: #e3e3e3;
+        height: 100px;
+        display: block;
+    }
 }
