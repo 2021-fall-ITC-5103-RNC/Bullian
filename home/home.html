@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/home.css"/>
     <link rel="stylesheet" href="../common/styles/common.css"/>
     <title>Bullian - coaching made easy</title>
+    <script src="./scripts/home.js"></script>
 </head>
 <body>
     <!-- Header/Nav starts here -->
@@ -34,8 +35,8 @@
                 <h1>Coaching <br/><span class="blue-text">Made Easy</span></h1>
                 <img src="./svg/online-anywhere.svg" alt="Learn anywhere" class="width-100 mob-display"/>
                 <p class="mbtm-8">Bullian is a hybrid online learning platform where students can choose to learn with an instructor of their choice face to face or they can choose from a plethora of do-at-your-pace courses</p>
-                <form action="" method="POST" class="display-flex space-apart">
-                    <input type="email" class="width-60 input-form-field" name="stud-signup-email" placeholder="Enter your email"/>
+                <form onsubmit=goToLogin(event) class="display-flex space-apart">
+                    <input type="email" class="width-60 input-form-field" name="stud-signup-email" placeholder="Enter your email" id="email"/>
                     <button type="submit" class="width-40 main-button button-palm">Get Started</button>
                 </form>
             </div>
@@ -47,7 +48,7 @@
             <div class="mob-sec-pad">
                 <h1 class="main-container mbtm-3">Learn at your own pace with experienced people from the industry. Collaborate for new ideas and let your dream come true.</h1>
                 <p class="main-container">We have catered to numerous people with their learning path. Be it a hobby or your profession, our experts will ensure that you grab each and every concept and able to deliver your capabilities to the maximum possible heights. </p>
-                <div class="main-container button-container display-flex mob-hor-flex-center"><a href="" class="main-button button-blue anchor-style mob-width-100">Get started for free</a></div>
+                <div class="main-container button-container display-flex mob-hor-flex-center"><a href="../authentication/authentication.html" class="main-button button-blue anchor-style mob-width-100">Get started for free</a></div>
             </div>
         </article>
         <section class="test-section mob-sec-pad">
@@ -116,7 +117,7 @@
                     <h1>Want to become an instructor? <span class="blue-text">Join Us.</span></h1>
                     <img src="./svg/online-collab.svg" alt="Become an instructor" class="width-100 mob-display"/>
                     <p>Over 100+ instructors are currently teaching 1500+ students through our platform. We provide all the necessary tools and equipments required for a holistic learning environment in which a student as well as a teacher can flourish unconditionally.</p>
-                    <div class="main-container button-container display-flex"><a href="" class="main-button button-palm anchor-style mob-width-100">Start teaching today</a></div>
+                    <div class="main-container button-container display-flex"><a href="../authentication/authentication.html" class="main-button button-palm anchor-style mob-width-100">Start teaching today</a></div>
                 </div>
                 
             </div>

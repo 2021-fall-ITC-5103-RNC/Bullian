@@ -23,9 +23,9 @@ const searchFaq = (e) => {
         let qn = element.innerText.toLowerCase();
 
         if (qn.includes(searchQuery)) {
-            element.style.display = "block";
+            element.parentElement.style.display = "block";
         } else {
-            element.style.display = "none";
+            element.parentElement.style.display = "none";
         }
     }
 }
