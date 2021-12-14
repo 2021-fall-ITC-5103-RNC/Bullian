@@ -20,13 +20,13 @@ function download(filename, text) {
     var student4Name = document.getElementById("stud-4-name").innerHTML;
 
 
-    var stud1Percent = document.getElementById("stud-1-percent");
-    var stud2Percent = document.getElementById("stud-2-percent");
-    var stud3Percent = document.getElementById("stud-3-percent");
-    var stud4Percent = document.getElementById("stud-4-percent");
+    var stud1Percent = document.getElementById("stud-1-percent").innerHTML;
+    var stud2Percent = document.getElementById("stud-2-percent").innerHTML;
+    var stud3Percent = document.getElementById("stud-3-percent").innerHTML;
+    var stud4Percent = document.getElementById("stud-4-percent").innerHTML;
 
 
-    var studList = student1Name+"\n"+student2Name+"\n"+student3Name+"\n"+student4Name;
+    var studList = student1Name+"\t"+stud1Percent+"\n"+student2Name+"\t"+stud2Percent+"\n"+student3Name+"\t"+stud3Percent+"\n"+student4Name+"\t"+stud4Percent;
 
 
     download("report.txt",studList);
