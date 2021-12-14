@@ -7,6 +7,7 @@
     <link rel = "stylesheet" href="../teacher/styles/teacher.css">
     <link rel = "stylesheet" href = "../teacher/styles/animated.css">
     <link rel = "stylesheet" href = "../common/styles/common.css">
+    <script src = "../teacher/js/main.js"></script>
 <body>
 
      <!-- Header/Nav starts here -->
@@ -56,35 +57,35 @@
                     <ul>
                         <li class = "display-flex">
                             <img class = "avatar" src="../teacher/Images/avatar.jpg">
-                            <p>Amelia Collier<t></t></p>
+                            <p id = "stud-1-name">Amelia Collier<t></t></p>
                             <div class="progress"> 
                                 <div class="progress__bar"></div>
                             </div>
-                            <p>80%</p>
+                            <p id = "stud-1-percent">80%</p>
                         </li>
                         <li class = "display-flex">
                             <img class = "avatar" src="../teacher/Images/avatar.jpg">
-                            <p>Estelle Baldwin</p>
+                            <p  id = "stud-2-name">Estelle Baldwin</p>
                             <div class="progress"> 
                                 <div class="progress__bar"></div>
                             </div>
-                            <p>80%</p>
+                            <p id = "stud-2-percent">80%</p>
                         </li>
                         <li class = "display-flex">
                             <img class = "avatar" src="../teacher/Images/avatar.jpg">
-                            <p>Michael Watts</p>
+                            <p  id = "stud-3-name">Michael Watts</p>
                             <div class="progress"> 
                                 <div class="progress__bar"></div>
                             </div>
-                            <p>80%</p>
+                            <p id = "stud-3-percent">80%</p>
                         </li>
                         <li class = "display-flex">
                             <img class = "avatar" src="../teacher/Images/avatar.jpg">
-                            <p>Joe Woods</p>
+                            <p  id = "stud-4-name">Joe Woods</p>
                             <div class="progress"> 
                                 <div class="progress__bar"></div>
                             </div>
-                            <p>80%</p>
+                            <p id = "stud-4-percent"> 80%</p>
                         </li>
                     </ul>
                 </section>
@@ -168,7 +169,7 @@
         </section>
 
     </section>
-
+    <button onclick = "generateReportCard()">Generate Report</button>
     <!-- Footer goes here -->
     <footer class="m-top-2">
         <section class="footer mob-sec-pad ">
