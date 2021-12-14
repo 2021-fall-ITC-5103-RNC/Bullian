@@ -294,7 +294,9 @@ body {
 .copyright-section{
     background-color: #006bff;
 }
-
+.overflow-wrap  {
+    overflow-wrap: break-word;
+}
 @media screen and (max-width: 767px) {
     .mob-flex-dir-col {
         flex-direction: column;
@@ -319,5 +321,13 @@ body {
     }
     .mob-align-center{
         text-align: center;
+    }
+    .main-nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-nav + a{
+        width: 100%;
+        margin-bottom: 4%;
     }
 }

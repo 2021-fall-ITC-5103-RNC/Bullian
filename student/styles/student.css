@@ -87,3 +87,30 @@ h1 {
 .hide {
     display: none;
 }
+
+@media screen and (max-width: 767px) {
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+    }
+    .student_dash_col {
+        flex: 0 0 124px;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 12px;
+    }
+    .img_height {
+        height: 68px;
+    }
+    .img_width {
+        width: 124px;
+    }
+    .container p {
+        font-size: 7px;
+    }
+    .container button {
+        font-size: 5px;
+    }
+}

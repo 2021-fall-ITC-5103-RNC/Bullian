@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/learning.css"/>
     <link rel="stylesheet" href="../common/styles/common.css"/>
     <title>Bullian - coaching made easy</title>
+    <script src="./script/learning.js"></script>
 </head>
 <body>
     <!-- Header/Nav starts here -->
@@ -17,24 +18,26 @@
             <nav class="main-nav">
                 <ul class="main-nav-list">
                     <li><a href="../home/home.html" class = "li-myButton">Home</a></li>
-                    <li><a href="#" class = "li-myButton">About us</a></li>
-                    <li><a href="#" class = "li-myButton">Our clients</a></li>
-                    <li> <a href="#" class = "li-myButton">Contact</a></li>
+                    <li><a href="../about/about.html" class = "li-myButton">About us</a></li>
+                    <li><a href="../products/products.html" class = "li-myButton">Products</a></li>
+                    <li><a href="../learning/learning.html" class = "li-myButton">Sample learning</a></li>
+                    <li> <a href="../faq/faq.html" class = "li-myButton">FAQs</a></li>
+                    <li> <a href="../contact/contact.html" class = "li-myButton">Contact</a></li>
                 </ul>
             </nav>
             <a href="../authentication/authentication.html" class = "main-button button-blue anchor-style">Sign Up/ Login</a>
         </div>
-    </header>   
+    </header>  
     <!-- Header/Nav ends here -->
     <main class="main-body">
-        <section class="main-container-fluid display-flex vert-flex-center space-apart mob-flex-dir-col-rev  mbtm-8 sign-in-container" id="log-in">
+        <section class="main-container-fluid display-flex vert-flex-center space-apart mob-flex-dir-col mob-sec-pad sign-in-container" id="log-in">
             <div class="width-70 mob-width-100 pad-3 right-border">
                 <iframe class="width-100 video-frame" src="https://www.youtube.com/embed/3dHNOWTI7H8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="width-20 mob-width-100 pad-3 mob-border-bot">
                 <h3>Live comments:</h3>
                 <hr/>
-                <ul class="list-style-none pad-none">
+                <ul class="list-style-none pad-none " id="comment-list">
                     <li class="mbtm-3">
                         <b>Swapnil: </b>
                         <small>Good Morning</small>
@@ -64,11 +67,17 @@
                         <small>I am doing good. Thanks for asking.</small>
                     </li>
                 </ul>
+                <hr/>
+                <form name="comment-form">
+                    <input type="text" class="width-100 mbtm-3" placeholder="Enter your name" id="name"/>
+                    <textarea class="comment-box width=100 mbtm-3" placeholder="Add your comment" id="comment" required></textarea>
+                    <button type="submit" class="main-button button-blue width-100" onclick=addComment(event)>Add comment</button>
+                </form>
             </div>
         </section>
-        <section class="main-container-fluid display-flex pad-3">
-            <h3>Description</h3>
-            <p></p>
+        <section class="main-container-fluid pad-3 mob-sec-pad">
+            <h3 class="margin-0">Description</h3>
+            <p>Angular is javascript framework for building single page application. In this video we will learn Angular plus we will learn how to follow documentation to learn more about Angular.</p>
         </section>
     </main>
     <!-- Footer goes here -->

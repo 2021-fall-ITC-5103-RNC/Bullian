@@ -47,3 +47,24 @@ main {
 .sub_heading_text {
     color: #c3884c
 }
+
+@media screen and (max-width: 767px) {
+    .products-card {
+        width: 100%;
+        margin-top: 12%;
+    }
+    #course_header {
+        width: 0%;
+        padding-top: 8px;
+    }
+    .course_img {
+        height: 100px;
+        float: left;
+        width: 100px;
+    }
+    #course_head {
+        display: block;
+        background-color: #041a2e;
+        height: 100px;
+    }
+}
