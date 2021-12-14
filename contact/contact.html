@@ -6,6 +6,8 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href = "/contact/styles/contact.css">
     <link rel = "stylesheet" href = "/common/styles/common.css">
+    <script src = "../contact/js/main.js"></script>
+    <script src= "https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -30,17 +32,17 @@
     <!-- Header/Nav ends here -->
     <section class = "box-content m-top-2">
         <section class = "main-section">
-            <section class = "width-fifty section-banner">
+            <section class = "width-fifty section-banner mob-display-none">
                 <img src = "/contact/Images/contact_us.png">
             </section>
     
     
     
-            <section class ="width-fifty">
+            <section class ="width-fifty mob-width-100">
                 <section class = "width-ninety">
                     <h1>Contact Us</h1>
                     <p  class = "minimal-para">Contact us for a quote, help or to join the team</p>
-                    <section class = "display-flex-contact-us-segment">
+                    <section class = "display-flex-contact-us-segment mob-flex-dir-col">
                         
                         <div>
                             <p  class = "our-details-top">Address</p>
@@ -48,7 +50,7 @@
                         </div>
                         <div>
                             <p  class = "our-details-top">E-Mail</p>
-                            <h5  class = "our-details-bottom"> bullean007@humber.ca</h5>
+                            <h5  class = "our-details-bottom">bullean007@humber.ca</h5>
                         </div>
                         <div>
                             <p  class = "our-details-top">Phone</p>
@@ -59,25 +61,30 @@
                     <br><br>
                     <h3>We'd love to hear from you</h3>
                     <br><br>
-                    <form action = "thankYou.html">
+                    <form id = "reach-us-form">
                         <section class = "form-flex">
                             <label for =  "name">Name</label><br>
-                            <input type="text" name = "fname" class="input-data"><br>
+                            <input id = "name" type="text" name = "fname" class="input-data" placeholder="Full name"><br>
+                            <p id = "invalid-name"></p>
                         </section>
                         
                         <section class = "form-flex">
                             <label for =  "email">Email</label><br>
-                            <input type="email" name = "email" class="input-data"><br>
+                            <input id = "email" type="email" name = "email" class="input-data" placeholder="E-mail id"><br>
+                            <p id = "invalid-email"></p>
+
                         </section>
                         
         
                         <section class = "form-flex" >
                             <label for =  "message">Message</label><br>
-                            <input type="text" name = "message" class="input-data-message"><br>
+                            <input id = "request-message" type="text" name = "message" class="input-data-message" placeholder="Your message goes here!"><br>
+                            <p id = "invalid-message"></p>
+
                         </section>
                         
         
-                        <input type="submit" value = "Send Message" class ="d-block mr-0 ml-auto btn">
+                        <input type="button" value = "Send Message" class ="d-block mr-0 ml-auto btn" onclick="confirmMessageReceived()">
                     </form>
                     <!-- <h4>
                         Follow Us

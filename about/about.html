@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="../common/styles/common.css">
-
+    <script src = "../about/js/main.js"></script>
+    
     <title>About Us</title>
 </head>
 
@@ -35,7 +36,7 @@
     </header>   
     <!-- Header/Nav ends here -->
     <section class="shrink-body">
-        <section class="grow-up-section">
+        <section class="grow-up-section mob-flex-dir-col">
             <section class="m-top-2 m-bottom-4">
                 <img src="../about/Images/tutor.jpg">
             </section>
@@ -88,27 +89,90 @@
         <section class="our-member-section">
             <h1>Our Members</h1>
             <br>
-            <section class="our-member-section-profiles">
+            <section class="our-member-section-profiles mob-flex-dir-col">
                 <div>
                     <img src="../about/Images/Sandeep.jpeg" alt="">
                     <p>Sandeep Das</p>
-                    <p class="member-designation">Back-End SME</p>
+                    <p class="member-designation">Back-End SME</p>  
+                    
+                    
+
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn" class = "apply-now-btn vertical-btn-center" onclick="openVid1();">Watch Demo</button>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <iframe width="1120" id = "vid1" height="630" src="https://www.youtube.com/embed/ysEN5RaKOlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                    </div>
+
                 </div>
                 <div>
                     <img src="../about/Images/Einstein.jpeg" alt="">
                     <p>Swapnil Roy Chowdhury</p>
                     <p class="member-designation">Front-End SME</p>
 
+
+                                        <!-- Trigger/Open The Modal -->
+                                        <button id="myBtn2" class = "apply-now-btn vertical-btn-center" onclick="openVid2();">Watch Demo</button>
+
+                                        <!-- The Modal -->
+                                        <div id="myModal2" class="modal">
+                    
+                                                <!-- Modal content -->
+                                                <div class="modal-content">
+                                                    <span class="close">&times;</span>
+                                                    <iframe width="1120" id = "vid1" height="630" src="https://www.youtube.com/embed/ysEN5RaKOlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                    
+                                        </div>
+
                 </div>
                 <div>
                     <img src="../about/Images/bill.jpg" alt="">
                     <p>Priya Mary Joseph</p>
                     <p class="member-designation">DB SME</p>
+
+
+                                        <!-- Trigger/Open The Modal -->
+                                        <button id="myBtn3" class = "apply-now-btn vertical-btn-center" onclick="openVid3();">Watch Demo</button>
+
+                                        <!-- The Modal -->
+                                        <div id="myModal3" class="modal">
+                    
+                                                <!-- Modal content -->
+                                                <div class="modal-content">
+                                                    <span class="close">&times;</span>
+                                                    <iframe width="560" id = "vid1" height="315" src="https://www.youtube.com/embed/ysEN5RaKOlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                    
+                                        </div>
                 </div>
                 <div>
                     <img src="../about/Images/sundar.jpg" alt="">
                     <p>Nithya</p>
                     <p class="member-designation">GURU SME</p>
+
+
+
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn4"  class = "apply-now-btn vertical-btn-center" onclick="openVid4();">Watch Demo</button>
+
+                    <!-- The Modal -->
+                    <div id="myModal4" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <iframe width="560" id = "vid1" height="315" src="https://www.youtube.com/embed/ysEN5RaKOlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                    </div>
 
                 </div>
             </section>
@@ -119,11 +183,11 @@
 
 
 
-        <section class="hiring-section">
-            <section class="width-fifty">
+        <section class="hiring-section mob-flex-dir-col">
+            <section class="width-fifty mob-width-100">
                 <img src="../about/Images/HiringGif.gif">
             </section>
-            <section class="width-fifty">
+            <section class="width-fifty mob-width-100">
                 <h1>We're Hiring!</h1>
                 <p>Intersted to working with our team?</p>
                 <p>If you’re driven to share your knowledge and empower learners to achieve their goals, then teaching
@@ -185,4 +249,9 @@
     </footer>
 </body>
 
+
+
+<script>
+     
+</script>
 </html>
