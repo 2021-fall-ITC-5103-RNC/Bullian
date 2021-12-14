@@ -1,4 +1,5 @@
 function confirmMessageReceived(){
+    
     document.getElementById("invalid-name").innerHTML = "";
     document.getElementById("invalid-email").innerHTML = "";
     document.getElementById("invalid-message").innerHTML = "";
@@ -51,14 +52,21 @@ function confirmMessageReceived(){
     
     if(flag == 0)
     {
-        alert("Hey, "+name+" we have received your request and we will get back to you in 3 business days.");
+        // alert("Hey, "+name+" we have received your request and we will get back to you in 3 business days.");
+        document.getElementById("success").style.display = "flex";
+        setTimeout(() => {
+            document.getElementById("success").style.display = "none"
+        }, 3000)
+        document.getElementById("success").innerHTML = "Hey, "+name+" we have received your request and we will get back to you in 3 business days.";
         let frm = document.getElementById("reach-us-form");
         frm.reset();
     }
 
 }
 
-
+window.onload = () => {
+    document.getElementById('success').style.display = "none;"
+}
 
 function testJS(){
     //var mail = document.createElement("a");
